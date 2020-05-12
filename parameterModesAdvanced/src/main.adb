@@ -2,10 +2,11 @@ with Ada.Text_IO; use Ada.Text_IO;
 with Increment_By_One;
 
 procedure Main is
-   A, B : Integer := 0;
+   A : Integer;
+   B : Integer := 0;
    done: Boolean;
 begin
    done := Increment_By_One.Increment_By_One(A, B);
    Put_Line ("Value of A is: " & Integer'Image(A));
-   Put_Line("Value of B is: " & Integer'Image(B));
+   Put_Line("Value of A is: " & Integer'Image(B));
 end Main;
